@@ -1,0 +1,99 @@
+.container {
+  width: 75rem;
+  height: 35rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 750px) {
+  .container {
+    grid-template-columns: 1fr;
+    width: 30rem;
+  }
+}
+
+.subcontainer {
+  padding: 5rem 4rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr 2fr 1fr;
+}
+.subcontainer__button {
+  height: 5rem;
+  align-self: end;
+  width: 60%;
+  height: 70%;
+  border-radius: 10rem;
+  border: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+}
+
+.subcontainer__heading {
+  color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: bold;
+}
+.subcontainer__text {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  line-height: 2rem;
+}
+.subcontainer__button {
+  font-family: "Big Shoulders Display", cursive;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.subcontainer__button:hover {
+  color: hsl(0, 0%, 95%);
+  border: 0.1rem solid hsl(0, 0%, 95%);
+}
+
+.orange {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.cyan {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.dcyan {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.orange_ {
+  color: hsl(31, 77%, 52%);
+}
+.orange_:hover {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.cyan_ {
+  color: hsl(184, 100%, 22%);
+}
+.cyan_:hover {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.dcyan_ {
+  color: hsl(179, 100%, 13%);
+}
+.dcyan_:hover {
+  background-color: hsl(179, 100%, 13%);
+}/*# sourceMappingURL=style.css.map */
